@@ -13,7 +13,7 @@
 `npm mysql2`
 
 2. Una vez instalados los paquetes, será fundamental la creación del archivo .sequelizerc (lo podemos crear en la raíz del proyecto) con la siguiente estructura:
-
+` 
 const path = require('path');
 
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
   'seeders-path': path.resolve('./src/database/seeders'),
   'migrations-path': path.resolve('./src/database/migrations'),
 }
-
+`
 3. Luego es fundamental correr el comando:
 
 sequelize init.
